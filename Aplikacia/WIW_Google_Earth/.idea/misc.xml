@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/layout/activity_actual_data_senzor.xml" value="0.3161231884057971" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/layout/activity_actual_data_senzor2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/layout/activity_history.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/layout/activity_maps.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/layout/activity_maps2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/layout/activity_maps3_d.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/layout/activity_settings.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/layout/activity_show_data.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/layout/history_lv.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/layout/show_data.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/menu/activity_actual_data_senzor.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/menu/menuhistory.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/menu/menumaps.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/menu/menumaps3d.xml" value="0.36666666666666664" />
+        <entry key="..\:/Martin/Programovanie/android/WIW_Google_Earth/app/src/main/res/menu/menushowdata.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
