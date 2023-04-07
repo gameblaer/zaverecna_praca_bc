@@ -49,7 +49,7 @@ public final class MyDB {
         public static final String COMPLET_LONG_WAY_TIME = "complet_long_way_time";
     }
 
-    public static final String gApiKey = "AIzaSyCqJEVNMXDP18Kf7aTyIkygtjFT0R2v3p8";
+    public static final String gApiKey = "API_KEY";
 
     /**
      //read all enums
