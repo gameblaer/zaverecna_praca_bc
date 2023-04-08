@@ -31,8 +31,8 @@ public class SaveFile extends AppCompatActivity {
 
         if( !askForPermissions(context) ) return;
 
-        if( name.length() > 0 ) FILE_NAME = name + ".txt";
-        else                    FILE_NAME = "NoName.txt";
+        if( name.length() > 0 ) FILE_NAME = name + ".kml";
+        else                    FILE_NAME = "NoName.kml";
 
         // vytvorenie súboru v priečinku aplikacie na vnutornej pameti zariadenia
         File root = new File(context.getExternalFilesDir(null), String.valueOf(R.string.app_name));
@@ -210,7 +210,7 @@ public class SaveFile extends AppCompatActivity {
         if( !askForPermissions(context) ) return;
 
         if( name.length() > 0 ) FILE_NAME =  name + "_Animation" + ".kml";
-        else                    FILE_NAME = "Animation" + ".kml";
+        else                    FILE_NAME = "AnimationNoName.kml";
 
         // vytvorenie suboru v priecinku Documents na vnutornej pameti zariadenia
         File root = new File(context.getExternalFilesDir(null), String.valueOf(R.string.app_name));
