@@ -68,8 +68,8 @@ public class DB_Functions extends SQLiteOpenHelper {
                 MyDB.DATA.LINEAR_ACCELERATION_Y + " DOUBLE NOT NULL DEFAULT 0," +
                 MyDB.DATA.LINEAR_ACCELERATION_Z + " DOUBLE NOT NULL DEFAULT 0," +  //20
                 MyDB.DATA.ORIENTATION_X + " DOUBLE NOT NULL DEFAULT 0," +    //heading
-                MyDB.DATA.ORIENTATION_Y + " DOUBLE NOT NULL DEFAULT 0," +
-                MyDB.DATA.ORIENTATION_Z + " DOUBLE NOT NULL DEFAULT 0," +    //tilt
+                MyDB.DATA.ORIENTATION_Y + " DOUBLE NOT NULL DEFAULT 0," +    //tilt
+                MyDB.DATA.ORIENTATION_Z + " DOUBLE NOT NULL DEFAULT 0," +    //roll
                 MyDB.DATA.ROTATION_VECTOR_X + " DOUBLE NOT NULL DEFAULT 0," +
                 MyDB.DATA.ROTATION_VECTOR_Y + " DOUBLE NOT NULL DEFAULT 0," +
                 MyDB.DATA.ROTATION_VECTOR_Z + " DOUBLE NOT NULL DEFAULT 0," +

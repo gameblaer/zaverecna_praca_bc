@@ -299,6 +299,7 @@ public class SaveFile extends AppCompatActivity {
         3 = speed
         4 = heading
         5 = tilt
+        6 = roll
          */
         double second = 2.5;
         try {
@@ -312,7 +313,7 @@ public class SaveFile extends AppCompatActivity {
                 second = (100.0 - speed) / 100.0 * 4.0 + 1.0;
             }
         } catch (Exception ignore){}
-        tempplate = kmlAnimationTag(rows[0],rows[1],rows[2],rows[4],rows[5], second);
+        tempplate = kmlAnimationTag(rows[0],rows[1],rows[2],rows[4],rows[5], second, rows[6]);
         for (String s : tempplate) {
             full = full + s;
         }
@@ -320,7 +321,7 @@ public class SaveFile extends AppCompatActivity {
         return full;
     }
 
-    private String[] kmlAnimationTag(String longtitude, String latitude, String altitude, String heading, String tilt, double time){
+    private String[] kmlAnimationTag(String longtitude, String latitude, String altitude, String heading, String tilt, double time, String roll){
         /*
          <gx:FlyTo>
           <gx:duration>1.00</gx:duration>
@@ -345,6 +346,7 @@ public class SaveFile extends AppCompatActivity {
                 "\t\t\t\t\t\t<altitude>"+altitude+"</altitude>\n",
                 "\t\t\t\t\t\t<heading>"+heading+"</heading>\n",
                 "\t\t\t\t\t\t<tilt>"+tilt+"</tilt>\n",
+                "\t\t\t\t\t\t<roll>"+roll+"</roll>\n",
                 "\t\t\t\t\t\t<range>0</range>\n",
                 "\t\t\t\t\t\t<altitudeMode>absolute</altitudeMode>\n",
                 "\t\t\t\t\t</Camera>\n",

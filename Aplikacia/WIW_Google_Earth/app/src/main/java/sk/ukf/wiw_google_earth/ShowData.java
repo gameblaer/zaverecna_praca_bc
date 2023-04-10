@@ -160,13 +160,13 @@ public class ShowData extends AppCompatActivity implements OnMapReadyCallback {
         List<LatLng> points = new ArrayList<>();
 
         double fAttlitude = 2000.0;
-        int ANGLE = 80;
+        final int ANGLE = 80;
 
         do {
             if(cursor.getCount() > 0) {
 
                 double fTemp;
-                double fTilt = cursor.getDouble(22) + fAttlitude;
+                double fTilt = -cursor.getDouble(22) + fAttlitude;
 
                 //first set
                 if( fAttlitude > 1000 ) {
@@ -185,13 +185,15 @@ public class ShowData extends AppCompatActivity implements OnMapReadyCallback {
                     fTilt = ANGLE;
                 }
 
+                //Log.d("Roll", "roll is " + cursor.getDouble(23));
                 Double[] xyzRow = {
                         cursor.getDouble(5),        //latitude
                         cursor.getDouble(6),        //longtitude
                         cursor.getDouble(7) + fTemp,//atlitude
                         cursor.getDouble(8),        //speed
                         cursor.getDouble(21),       //heading
-                        fTilt,                                 //tilt naklon vpred vzad
+                        fTilt,                                 //tilt sklon vpred vzad, cursor.getDouble(22),
+                        -cursor.getDouble(23),       //roll naklon vlavo vpravo
                 };
                 xyz.add(xyzRow);
                 //set value for calculate tilt
@@ -220,6 +222,7 @@ public class ShowData extends AppCompatActivity implements OnMapReadyCallback {
                         xyz.get(i)[3].toString(),                           //speed
                         xyz.get(i)[4].toString(),                           //heading
                         xyz.get(i)[5].toString(),                           //tilt
+                        xyz.get(i)[6].toString(),                           //roll
                 };
                 data.add(row);
             } else {
@@ -231,6 +234,7 @@ public class ShowData extends AppCompatActivity implements OnMapReadyCallback {
                         xyz.get(i)[3].toString(),
                         xyz.get(i)[4].toString(),
                         xyz.get(i)[5].toString(),
+                        xyz.get(i)[6].toString(),
                 };
                 data.add(row);
             }
